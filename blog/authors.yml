@@ -1,23 +1,18 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-  page: true
-  socials:
-    x: yangshunz
-    github: yangshun
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+viktorpopp:
+  name: Viktor Popp
+  title: Hexium OS Founder
+  url: https://viktorpopp.github.io
+  image_url: https://github.com/viktorpopp.png
   page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+    permalink: '/all-viktor-popp-articles'
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    github: viktorpopp
+
+thedouck:
+  name: The Douck
+  title: Hexium OS Co-Founder
+  image_url: https://github.com/thedouck.png
+  page:
+    permalink: '/all-the-douck-articles'
+  socials:
+    github: thedouck
