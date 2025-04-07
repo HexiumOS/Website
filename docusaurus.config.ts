@@ -28,6 +28,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
+          // TODO: Update the edit link url
             'https://github.com/hexiumos/hexium_website/tree/main/',
         },
         theme: {
