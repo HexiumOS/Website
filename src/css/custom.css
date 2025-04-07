@@ -1,0 +1,42 @@
+/* Hero Section */
+.hero-div {
+    background: linear-gradient(to bottom, #d3e4ff, #ffffff);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-text-div {
+    padding: 80px 0px 24px;
+}
+
+.hero-header {
+    font-size: 80px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.hero-paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 25px 0px 3px;
+}
+
+.hero-button-container {
+    padding: 1px;
+    text-align: center;
+}
+
+.hero-button-container a {
+    background-color: rgb(0, 25, 104);
+    color: white;
+    padding: 11px 40px;
+    font-weight: 700;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.hero-button-container a:hover {
+    background-color: rgb(0, 40, 140);
+}
