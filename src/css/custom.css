@@ -8,7 +8,7 @@
     --button-text: white;
 }
 
-[data-theme='dark'] {
+html[data-theme='dark'] {
     /* Dark theme custom variables */
     --hero-gradient-start: #001133;
     --hero-gradient-end: #000520;
@@ -16,6 +16,8 @@
     --button-bg: rgb(51, 102, 255);
     --button-hover-bg: rgb(77, 121, 255);
     --button-text: white;
+    --ifm-background-color: #000520;
+    --ifm-background-surface-color: #000520;
 }
 
 /* Hero Section */
