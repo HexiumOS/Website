@@ -9,9 +9,9 @@ const config: Config = {
   favicon: 'img/favicon.ico',
   url: 'https://hexiumos.github.io',
   baseUrl: '/',
-
   organizationName: 'hexiumos',
-  projectName: 'Hexium',
+  projectName: 'hexiumos.github.io',
+  trailingSlash: false,
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
