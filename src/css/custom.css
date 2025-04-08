@@ -1,6 +1,26 @@
+/* You can override the default Infima variables here. */
+:root {
+    --hero-gradient-start: #d3e4ff;
+    --hero-gradient-end: #ffffff;
+    --text-color: #000000;
+    --button-bg: rgb(0, 25, 104);
+    --button-hover-bg: rgb(0, 40, 140);
+    --button-text: white;
+}
+
+[data-theme='dark'] {
+    /* Dark theme custom variables */
+    --hero-gradient-start: #001133;
+    --hero-gradient-end: #000520;
+    --text-color: #ffffff;
+    --button-bg: rgb(51, 102, 255);
+    --button-hover-bg: rgb(77, 121, 255);
+    --button-text: white;
+}
+
 /* Hero Section */
 .hero-div {
-    background: linear-gradient(to bottom, #d3e4ff, #ffffff);
+    background: linear-gradient(to bottom, var(--hero-gradient-start), var(--hero-gradient-end));
     padding: 80px 0;
     text-align: center;
 }
@@ -13,12 +33,14 @@
     font-size: 80px;
     font-weight: 600;
     margin: 0;
+    color: var(--text-color);
 }
 
 .hero-paragraph {
     font-size: 18px;
     font-weight: 400;
     padding: 25px 0px 3px;
+    color: var(--text-color);
 }
 
 .hero-button-container {
@@ -27,8 +49,8 @@
 }
 
 .hero-button-container a {
-    background-color: rgb(0, 25, 104);
-    color: white;
+    background-color: var(--button-bg);
+    color: var(--button-text);
     padding: 11px 40px;
     font-weight: 700;
     border-radius: 6px;
@@ -38,5 +60,5 @@
 }
 
 .hero-button-container a:hover {
-    background-color: rgb(0, 40, 140);
+    background-color: var(--button-hover-bg);
 }
