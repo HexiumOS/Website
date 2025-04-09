@@ -29,7 +29,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl:
           // TODO: Update the edit link url
-            'https://github.com/hexiumos/hexium_website/tree/main/',
+            'https://github.com/hexiumos/hexiumos.github.io/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
