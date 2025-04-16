@@ -34,7 +34,7 @@ Hexium OS is designed to run on:
 ### Recommended Target Requirements
 
 - x86_64 processor
-- 512 GB RAM
+- 512 MB RAM
 - UEFI-compatible system with Secure Boot disabled
 
 ### Optional Features
@@ -60,3 +60,24 @@ When running in a virtual environment:
 
 - Enable hardware virtualization (VT-x/AMD-V)
 - Allocate at least 512 MB RAM
+## Development Requirements
+
+### Required Software
+
+- Rust (nightly toolchain)
+- Cargo package manager
+- QEMU emulator
+- Git version control
+- GNU xorriso
+
+### Optional Tools
+
+- GDB debugger
+- Rust analyzer
+- VirtualBox (for alternative testing)
+
+## Additional Notes
+
+- Internet connection required for downloading dependencies
+- Basic knowledge of command-line operations
+- Familiarity with Rust programming language recommended
