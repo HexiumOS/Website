@@ -7,7 +7,6 @@ sidebar_position: 1
 
 - Overview of Hexium OS
 - Goals and Objectives
-- System Requirements
 
 ## 2. Getting Started
 

@@ -2,14 +2,14 @@
 title: How it works
 sidebar_position: 1
 ---
-# 1\. Boot Process
+## Boot Process
 
 * **Bootloader:** Hexium OS uses the Limine bootloader to load the kernel into memory. The bootloader provides essential services like memory mapping and module loading.  
 * **Kernel Entry Point:** The kernel's entry point is the **kmain** function in **kernel/src/main.rs**. This function initializes the OS and enters an infinite loop (**hlt\_loop**).
 
 ---
 
-# 2\. Initialization
+## Initialization
 
 * **Global Descriptor Table (GDT):** The GDT is initialized in **kernel/src/interrupts/gdt.rs**. It sets up memory segmentation and the Task State Segment (TSS) for handling interrupts like double faults.  
 * **Interrupt Descriptor Table (IDT):** The IDT is initialized in **kernel/src/interrupts/idt.rs**. It maps interrupt handlers for exceptions (e.g., page faults) and hardware interrupts (e.g., keyboard, timer).  
@@ -18,7 +18,7 @@ sidebar_position: 1
 
 ---
 
-# 3\. Core Features
+## Core Features
 
 * **Interrupt Handling**:  
   * Hardware interrupts (e.g., keyboard and timer) are handled using the Programmable Interrupt Controller (PIC) in **kernel/src/drivers/pic.rs**.  
@@ -31,23 +31,21 @@ sidebar_position: 1
 
 ---
 
-# 4\. User Interaction
+## User Interaction
 
 * **Terminal Output:** The OS uses the Flanterm library for framebuffer-based terminal output. This is initialized in **kernel/src/writer.rs**.  
 * **Logging:** A logging system in **kernel/src/log.rs** provides macros for logging messages with different severity levels (e.g., trace, info, error (**kernel/src/devices/keyboard/mod.rs**, **kernel/src/fs/ramfs.rs** and **kernel/src/lib.rs**, respectively)).
 
 ---
 
-# 
-
-# 5\. Build and Run
+## 5 Build and Run
 
 * **Build System:** The OS is built using a **Makefile** and Rust's **cargo** tool. The build process generates a kernel binary and an ISO image.  
 * **Run:** The OS can be run in QEMU using the **make run** command. It uses OVMF for UEFI emulation.
 
 ---
 
-# 6\. Limitations
+## 6 Limitations
 
 Hexium OS is still in its early stages and lacks many features of a full-fledged operating system:
 
@@ -57,11 +55,11 @@ Hexium OS is still in its early stages and lacks many features of a full-fledged
 
 ---
 
-# Summary
+## Summary
 
 Hexium OS is a minimal kernel that demonstrates core operating system concepts like memory management, interrupt handling, and multitasking. It is designed for experimentation and learning, making it a great project for exploring systems programming in Rust.
 
-# All files in Hexium OS
+## File Structure in the source tree
 
 ## Root Directory
 
