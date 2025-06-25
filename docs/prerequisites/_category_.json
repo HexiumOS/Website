@@ -1,8 +1,0 @@
-{
-    "label": "Prerequisites",
-    "position": 3,
-    "link": {
-        "type": "generated-index",
-        "description": "Hardware and software requirements for building and running Hexium OS."
-    }
-}

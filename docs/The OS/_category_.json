@@ -1,8 +1,0 @@
-{
-    "label": "The OS",
-    "position": 4,
-    "link": {
-        "type": "generated-index",
-        "description": "How the Hexium OS works, its architecture, and how to use it."
-    }
-}
