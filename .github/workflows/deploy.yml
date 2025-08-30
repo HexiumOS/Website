@@ -1,9 +1,12 @@
 name: Deploy
+
 on:
   push:
     branches: main
   pull_request:
     branches: main
+  schedule:
+    - cron: "0 0 * * *"  # Runs every day at 00:00 UTC
 
 jobs:
   deploy:
@@ -15,10 +18,16 @@ jobs:
       contents: read # Needed to clone the repository
 
     steps:
-      - name: Clone repository
+      - name: Clone repository with submodules
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          fetch-depth: 0  # Needed to fully update submodules
+
+      - name: Update submodules
+        run: |
+          git submodule sync --recursive
+          git submodule update --init --recursive
 
       - name: Install Deno
         uses: denoland/setup-deno@v2
@@ -30,11 +39,11 @@ jobs:
         with:
           node-version: lts/*
 
-      - name: Install step
-        run: "npm install"
+      - name: Install dependencies
+        run: npm install
 
-      - name: Build step
-        run: "npm run build"
+      - name: Build
+        run: npm run build
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
@@ -42,5 +51,3 @@ jobs:
           project: "hexium"
           entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
           root: "build"
-          
-          
